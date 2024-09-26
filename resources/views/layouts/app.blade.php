@@ -18,13 +18,15 @@
 
     @include('admin.partials.header')
 
-    <div class="d-flex main-wrapper">
+    <div class="d-flex main-wrapper gap-3">
         @auth
             @include('admin.partials.aside')
         @endauth
 
+        <div>
+            @yield('content')
+        </div>
 
-        @yield('content')
     </div>
 
 

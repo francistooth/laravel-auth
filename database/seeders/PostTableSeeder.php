@@ -10,9 +10,12 @@ use App\Functions\Helper;
 
 class PostTableSeeder extends Seeder
 {
-    /**Run the database seeds.*/
-  public function run(Faker $faker): void{
-      for ($i=0; $i < 100 ; $i++) {
+    /**
+     * Run the database seeds.
+     */
+    public function run(Faker $faker): void
+    {
+        for ($i=0; $i < 100 ; $i++) { 
 
             $new_post = new Post();
             $new_post->title = $faker->sentence;
@@ -21,6 +24,10 @@ class PostTableSeeder extends Seeder
             $new_post->reading_time = $faker->numberBetween(1, 10);
 
             $new_post->save();
+
+
+
+            
         }
     }
 }
