@@ -21,10 +21,6 @@ class PostTableSeeder extends Seeder
             $new_post->reading_time = $faker->numberBetween(1, 10);
 
             $new_post->save();
-
-
-
-
         }
     }
 }
